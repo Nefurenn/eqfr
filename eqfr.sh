@@ -8,5 +8,5 @@ if [[ -n $ps_eqfr  ]]; then
 	pm2 delete eqfr
 fi
 cd /root/eqfr
-npm install --no-audit
+npm install --no-audit --silent
 pm2 start "node app.js" --name eqfr 
